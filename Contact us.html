@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style2.css">
+    
+   
+</head>
+<body>
+  <h1>Chalo Commerce</h1>
+  <nav class="nav1">
+      <ul>
+          <a href="index.html">Home</a>
+          <a href="About us.html">About us</a>
+          <a href="Products.html">Products</a>
+          <a href="Contact us.html">Contact us</a>
+          <a href="Register.html">Register</a>
+      </ul>
+  </nav>
+    <small>Enter message (optional) and click button "Send"</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h2>Contact us</h2>
+      <p>
+        <textarea placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" placeholder="Your email">
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+<p class="result-message centered">Thank you for your message</p>
+<script>
+    function addClass() {
+    document.body.classList.add("sent");
+  }
+  
+  sendLetter.addEventListener("click", addClass);
+</script>
+</body>
+</html>
+
